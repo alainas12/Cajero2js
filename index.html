@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cajero Automático</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/icons8-dinero-16.png">
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cajero Automático</h1>
+  <label for="username">Usuario:</label>
+  <input type="text" id="username"><br>
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password"><br>
+  <button onclick="login()">Iniciar sesión</button><br><br>
+
+  <div id="operations" style="display: none;">
+    <h2>Operaciones</h2>
+    <button onclick="withdraw()">Retirar</button>
+    <button onclick="deposit()">Depositar</button>
+    <button onclick="changePassword()">Cambiar Contraseña</button>
+    <button onclick="logout()">Cerrar sesión</button><br><br>
+    <div id="output"></div>
+  </div>
+
+  
+</body>
+</html>
